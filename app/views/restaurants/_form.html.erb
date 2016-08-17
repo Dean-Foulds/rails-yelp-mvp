@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row list-inline">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <%= simple_form_for(@restaurant) do |f| %>
+        <%= f.error_notification %>
+
+        <%= f.input_field :name, placeholder: 'Name' %>
+        <%= f.input_field :address, placeholder: 'Address'%>
+        <%= f.input_field :phone_number, placeholder: 'Phone' %>
+        <%= f.input_field :category, placeholder: 'Type of cuisine' %>
+
+        <%= f.submit submit_html: { class: 'btn btn-danger' } %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
