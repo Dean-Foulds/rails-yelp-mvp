@@ -1,3 +1,4 @@
 class Review < ApplicationRecord
-  belonds_to :restaurant
+  validates :ratings, :content, :restaurant_id, presence: true
+  belongs_to :restaurant
 end
